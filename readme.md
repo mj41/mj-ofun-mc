@@ -26,6 +26,13 @@ Survival multiplayer server where each player owns an isolated 512×512 cube wor
 
 git repo: [w42-mc-cubes](https://github.com/mj41/w42-mc-cubes) (private)
 
+### Sponsorship
+
+Support the "Cubes in Motion" Minecraft server. Help us build a vision of safe home cubes where you can build and chill, with various cube types to enjoy fun and adventure with friends. Monthly contributions help sustain the server and fund ongoing development.
+
+- **Minecraft**: [Patreon - Minecraft tier](https://www.patreon.com/15562538/join)
+- **General support**: [GitHub Sponsors - mj41](https://github.com/sponsors/mj41)
+
 ## w42-mc-cubes-plugin
 
 Spigot/Paper plugin for the Cubes game mode.
