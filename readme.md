@@ -1,6 +1,6 @@
 # Overview
 
-Umbrella index for all [mj41's Minecraft projects](https://github.com/mj41).
+Umbrella index for all [mj41](https://github.com/mj41)'s Minecraft projects.
 
 Live server: [mc.w42.eu](https://mc.w42.eu)
 
