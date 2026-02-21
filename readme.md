@@ -2,6 +2,8 @@
 
 Umbrella index for all [mj41's Minecraft projects](https://github.com/mj41).
 
+Live server: [mc.w42.eu](https://mc.w42.eu)
+
 # Public repos
 
 ## go-mc
@@ -26,6 +28,12 @@ Survival multiplayer server where each player owns an isolated 512×512 cube wor
 
 git repo: [w42-mc-cubes](https://github.com/mj41/w42-mc-cubes) (private)
 
+## w42-mc-web
+
+Website for [mc.w42.eu](https://mc.w42.eu) — the web portal for the Cubes in Motion Minecraft server.
+
+git repo: [w42-mc-web](https://github.com/mj41/w42-mc-web) (private)
+
 ### Sponsorship
 
 Support the "Cubes in Motion" Minecraft server. Help us build a vision of safe home cubes where you can build and chill, with various cube types to enjoy fun and adventure with friends. Monthly contributions help sustain the server and fund ongoing development.
@@ -37,11 +45,23 @@ Support the "Cubes in Motion" Minecraft server. Help us build a vision of safe h
 
 Spigot/Paper plugin for the Cubes game mode.
 
+## w42-mc-server-img
+
+Builds two container images for the Cubes in Motion server: `cubes-server` (Paper JAR pre-downloaded) and `cubes-minecraft` (adds plugin + init data on top).
+
+git repo: [w42-mc-server-img](https://github.com/mj41/w42-mc-server-img) (private)
+
 ## w42-mc-cubes-init
 
 Reference world data for cubes server initialization container (cloned at pod startup).
 
 git repo: [w42-mc-cubes-init](https://github.com/mj41/w42-mc-cubes-init) (private)
+
+## w42-mc-cubes-tmpls
+
+Repository of pregenerated cubes used as templates for new cube assignments.
+
+git repo: [w42-mc-cubes-tmpls](https://github.com/mj41/w42-mc-cubes-tmpls) (private)
 
 ## w42-mc-backup
 
