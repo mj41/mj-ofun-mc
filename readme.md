@@ -47,7 +47,7 @@ Spigot/Paper plugin for the Cubes game mode.
 
 ## w42-mc-server-img
 
-Builds two container images for the Cubes in Motion server: `cubes-server` (Paper JAR pre-downloaded) and `cubes-minecraft` (adds plugin + init data on top).
+Builds the `cubes-minecraft` container image using a two-stage `Containerfile`: stage 1 pre-downloads the Paper JAR (cached via GHA BuildKit), stage 2 adds the plugin + init data.
 
 git repo: [w42-mc-server-img](https://github.com/mj41/w42-mc-server-img) (private)
 
