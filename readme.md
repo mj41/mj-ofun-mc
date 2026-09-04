@@ -8,7 +8,7 @@ Live server: [mc.w42.eu](https://mc.w42.eu)
 
 ## go-mc
 
-Public fork with custom branch supporting Minecraft 1.21.11 protocol version.
+Public fork with custom branch `mj-262-cubes` supporting Minecraft 26.2 (protocol 776); `mj-121-cubes` is the frozen 1.21.11 line.
 
 git repo: [go-mc](https://github.com/mj41/go-mc) (public fork)
 
