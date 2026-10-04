@@ -4,11 +4,29 @@ Umbrella index for all [mj41](https://github.com/mj41)'s Minecraft projects.
 
 Live server: [mc.w42.eu](https://mc.w42.eu)
 
+Other projects: [mj-ofun](https://github.com/mj41/mj-ofun).
+
 # Public repos
+
+## mc26, go-mc26, go-mc26-kit, mc26-data, mc26-data-pre
+
+A Go library for Minecraft: Java Edition 26.x, generated from Mojang's unobfuscated server jars: the network protocol, game data and world formats as Go types, one branch per Minecraft version (26.1, 26.2, 26.3). Not a fork: a new Minecraft version means "extract, generate, build", and the compiler points at what changed. License: MIT.
+
+```
+Mojang jar ──► mc26 ──┬─► mc26-data      (releases)                ──► mc26 ──► go-mc26     (the library)
+                      └─► mc26-data-pre  (snapshots, pre-releases)                ◄── go-mc26-kit (bot, server, accounts, examples)
+```
+
+git repos:
+- [mc26](https://github.com/mj41/mc26): the extractors (jar → JSON), the generators and the `mc26` pipeline command
+- [go-mc26](https://github.com/mj41/go-mc26): the generated library, `mc-<version>` branches, tags `v0.<YYN>.<patch>` (`v0.263.0` is Minecraft 26.3)
+- [go-mc26-kit](https://github.com/mj41/go-mc26-kit): a client, a server framework, account flows and examples, built against every supported library version
+- [mc26-data](https://github.com/mj41/mc26-data): the game data and typed wire schema of every release as JSON, with Markdown docs
+- [mc26-data-pre](https://github.com/mj41/mc26-data-pre): the same for snapshots and pre-releases
 
 ## go-mc
 
-Public fork with custom branch `mj-262-cubes` supporting Minecraft 26.2 (protocol 776); `mj-121-cubes` is the frozen 1.21.11 line.
+The older approach: a public fork of [Tnze/go-mc](https://github.com/Tnze/go-mc) with custom branch `mj-262-cubes` supporting Minecraft 26.2 (protocol 776); `mj-121-cubes` is the frozen 1.21.11 line. go-mc26 above is its successor.
 
 git repo: [go-mc](https://github.com/mj41/go-mc) (public fork)
 
@@ -50,6 +68,12 @@ Spigot/Paper plugin for the Cubes game mode.
 Builds the `cubes-minecraft` container image using a two-stage `Containerfile`: stage 1 pre-downloads the Paper JAR (cached via GHA BuildKit), stage 2 adds the plugin + init data.
 
 git repo: [w42-mc-server-img](https://github.com/mj41/w42-mc-server-img) (private)
+
+## w42-mc-rotate-img
+
+Builds the `cubes-rotation-worker` container image: the world generation and rotation tools from `w42-mc-cubes`, for the periodic cube rotation.
+
+git repo: [w42-mc-rotate-img](https://github.com/mj41/w42-mc-rotate-img) (private)
 
 ## w42-mc-cubes-init
 
