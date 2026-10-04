@@ -2,7 +2,7 @@
 
 Umbrella index for all [mj41](https://github.com/mj41)'s Minecraft projects.
 
-Live server: [mc.w42.eu](https://mc.w42.eu)
+Live server: [mc.w42.eu](https://mc.w42.eu), Minecraft: Java Edition 26.3 on Paper; Bedrock players join through Geyser.
 
 Other projects: [mj-ofun](https://github.com/mj41/mj-ofun).
 
@@ -61,11 +61,13 @@ Support the "Cubes in Motion" Minecraft server. Help us build a vision of safe h
 
 ## w42-mc-cubes-plugin
 
-Spigot/Paper plugin for the Cubes game mode.
+Spigot/Paper plugin for the Cubes game mode. A release tag builds `cubes-plugin-<version>.jar`; the server image uses the same tag.
+
+git repo: [w42-mc-cubes-plugin](https://github.com/mj41/w42-mc-cubes-plugin) (private)
 
 ## w42-mc-server-img
 
-Builds the `cubes-minecraft` container image using a two-stage `Containerfile`: stage 1 pre-downloads the Paper JAR (cached via GHA BuildKit), stage 2 adds the plugin + init data.
+Builds the `cubes-minecraft` container image on top of `itzg/minecraft-server:java25`, using a two-stage `Containerfile`: stage 1 pre-downloads the Paper JAR (cached via GHA BuildKit), stage 2 adds the plugin, the init data, and Geyser + Floodgate (the Bedrock bridge, pinned by version and sha256).
 
 git repo: [w42-mc-server-img](https://github.com/mj41/w42-mc-server-img) (private)
 
@@ -110,5 +112,7 @@ Infrastructure GitOps repository with Kustomize manifests for LKE cluster (Flux 
 git repo: [mj41-linode](https://github.com/mj41/mj41-linode) (private)
 
 ## w42-bck-cubes
+
+Automated world backups of the Cubes server, written by the backup controller from `w42-mc-backup`.
 
 git repo: [w42-bck-cubes](https://github.com/mj41/w42-bck-cubes) (private)
